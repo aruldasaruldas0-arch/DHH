@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Dream Home Hub | Architecture, Design & Construction</title>
+        <meta name="description" content="Dream Home Hub creates thoughtful architectural designs, floor plans, 3D elevations, interiors, construction and renovation solutions from concept to completion."/>
+        <meta name="theme-color" content="#111111"/>
+        <meta property="og:title" content="Dream Home Hub | Architecture, Design & Construction"/>
+        <meta property="og:description" content="Design + build under one roof."/>
+        <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80"/>
+        <link rel="canonical" href="https://example.com/dream-home-hub"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>tailwind.config={theme:{extend:{fontFamily:{display:['Barlow Semi Condensed','sans-serif'],body:['Figtree','sans-serif']}}}}</script>
+        <style>:root { --ink: #0b0b0b; --near: #111; --paper: #111; --soft: #171717; --muted: #a9a9a9; --line: #383838; --accent: #b5a58f; --light: #f3f1ec; } * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; background: var(--ink); color: var(--light); font-family: Figtree,Arial,sans-serif; overflow-x: hidden; } a { text-decoration: none; color: inherit; } button, input, select, textarea { font: inherit; } button { cursor: pointer; } .container { width: min(1400px,calc(100% - 80px)); margin-inline: auto; } .display { font-family: 'Barlow Semi Condensed',sans-serif; text-transform: uppercase; letter-spacing: -.045em; line-height: .88; } .eyebrow { font: 600 11px/1.2 Figtree,sans-serif; letter-spacing: .18em; text-transform: uppercase; } .line { height: 1px; background: currentColor; opacity: .25; } .btn { display: inline-flex; align-items: center; gap: 20px; border: 1px solid currentColor; padding: 16px 19px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; transition: background .35s,color .35s,gap .35s; } .btn:hover { background: #fff; color: #111; gap: 28px; } .btn.light:hover { background: #fff; color: #111; } .arrow { display: inline-block; transition: transform .35s; } .btn:hover .arrow, .link:hover .arrow { transform: translateX(7px); } .reveal { opacity: 1!important; transform: none!important; visibility: visible!important; } .reveal.is-visible { opacity: 1; transform: none; } .clip-reveal { clip-path: inset(0)!important; transform: none!important; opacity: 1!important; } .media { overflow: hidden; background: #202020; } .media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); } .media:hover img { transform: scale(1.04); } .hero { min-height: 94vh; background: #222; position: relative; color: #fff; display: flex; align-items: flex-end; overflow: hidden; } .hero-bg { position: absolute; inset: 0; background: linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.28) 75%),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=88') center/cover; transform: scale(1.08) translateY(0); animation: heroImage 1.7s cubic-bezier(.2,.7,.2,1) forwards; } .hero-bg:after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.12) 72%); } @keyframes heroImage{ to {  transform: scale(1); } } .nav { position: fixed; z-index: 30; top: 0; left: 0; width: 100%; color: #fff; transition: background .4s,color .4s,border-color .4s; padding: 24px 0; } .nav.scrolled { background: rgba(11,11,11,.96); color: #fff; border-bottom: 1px solid #383838; backdrop-filter: blur(12px); } .nav-inner { display: flex; align-items: center; justify-content: space-between; } .brand { font: 700 22px/1 'Barlow Semi Condensed'; letter-spacing: -.03em; } .nav-links { display: flex; gap: 28px; align-items: center; } .nav-links a { font-size: 10px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; position: relative; } .nav-links a:after { content: ""; position: absolute; left: 0; bottom: -7px; width: 0; height: 1px; background: currentColor; transition: width .3s; } .nav-links a:hover:after, .nav-links a.active:after { width: 100%; } .nav-links a.active { color: var(--accent); } .nav-cta { font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; } .menu-btn { display: none; border: 0; background: none; color: inherit; } .menu-btn:focus-visible, .filter:focus-visible, .btn:focus-visible, .modal-close:focus-visible, .mobile-menu a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; } .hero-content { position: relative; z-index: 2; padding: 170px 0 34px; width: 100%; } .hero-kicker { animation: up .8s .25s both; } .hero-title { font-size: clamp(72px,11vw,190px); max-width: 900px; margin: 28px 0 30px; animation: up 1s .4s both; } .hero-copy { max-width: 440px; font-size: 16px; line-height: 1.55; animation: up .8s .6s both; } .hero-actions { display: flex; gap: 12px; margin-top: 28px; animation: up .8s .75s both; } .hero-strip { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.38); padding-top: 16px; margin-top: 100px; font-size: 10px; font-weight: 700; letter-spacing: .16em; animation: up .8s 1s both; } .hero-strip span { position: relative; } .hero-strip span:before { content: '+'; margin-right: 15px; color: var(--accent); } @keyframes up{ from {  opacity: 0;  transform: translateY(45px); }  to {  opacity: 1;  transform: none; } } section { padding: 120px 0; background: var(--ink); color: var(--light); } .about-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 11%; align-items: start; } .about-title { font-size: clamp(58px,8vw,124px); max-width: 720px; margin: 30px 0 45px; } .about-copy { max-width: 420px; font-size: 16px; line-height: 1.65; color: #d0d0d0; } .about-statement { font-size: clamp(34px,5vw,70px); margin-top: 130px; } .founder-mini { border-top: 1px solid #3a3a3a; margin-top: 65px; padding-top: 15px; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; } .about-image { height: 680px; border: 1px solid #2d2d2d; margin-top: 80px; } .services { background: #111; color: var(--light); } .section-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 70px; } .section-title { font-size: clamp(64px,9vw,140px); max-width: 800px; margin: 25px 0 0; } .service-row { display: grid; grid-template-columns: 90px 1fr 1fr 40px; min-height: 118px; gap: 20px; align-items: center; border-top: 1px solid #383838; padding: 28px 0; transition: padding .35s,background .35s; } .service-row:last-child { border-bottom: 1px solid #383838; } .service-row { cursor: pointer; } .service-row:hover, .service-row:focus-within { padding-left: 18px; padding-right: 18px; background: #1b1b1b; } .service-row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; } .service-number { font: 500 18px 'Barlow Semi Condensed'; color: #9b9b9b; transition: color .3s; } .service-row:hover .service-number { color: var(--accent); } .service-name { font: 600 clamp(25px,3vw,46px) 'Barlow Semi Condensed'; letter-spacing: -.02em; text-transform: uppercase; transition: transform .35s; } .service-row:hover .service-name { transform: translateX(8px); } .service-desc { font-size: 14px; line-height: 1.5; color: #aaa; max-width: 330px; } .service-arrow { font-size: 24px; transition: transform .35s; } .service-row:hover .service-arrow { transform: translateX(8px); } .projects { background: #0d0d0d; color: var(--light); } .filters { display: flex; gap: 22px; flex-wrap: wrap; margin: 0 0 70px; } .filter { border: 0; background: none; color: #bcbcbc; padding: 0 0 8px; border-bottom: 1px solid transparent; font-size: 10px; font-weight: 700; letter-spacing: .14em; } .filter.active, .filter:hover { border-color: #fff; color: #fff; } .project-list { display: grid; grid-template-columns: repeat(12,1fr); column-gap: 7%; row-gap: 140px; } .project { grid-column: span 7; } .project:nth-child(even) { grid-column: 6/span 7; margin-top: 110px; } .project-image { height: clamp(300px,48vw,700px); position: relative; cursor: pointer; } .project:nth-child(2) .project-image { height: clamp(280px,38vw,540px); } .project:nth-child(3) .project-image { height: clamp(280px,42vw,600px); } .project-overlay { position: absolute; inset: 0; background: rgba(0,0,0,.2); opacity: 0; transition: opacity .4s; } .project:hover .project-overlay { opacity: 1; } .project-meta { display: flex; justify-content: space-between; align-items: flex-start; padding-top: 18px; } .project-title { font-size: clamp(34px,4vw,64px); margin: 0; } .project-info { display: flex; gap: 17px; color: #aaa; font-size: 10px; letter-spacing: .09em; text-transform: uppercase; flex-wrap: wrap; justify-content: flex-end; } .project-arrow { font-size: 24px; transition: transform .35s; } .project:hover .project-arrow { transform: translateX(8px); } .project-desc { max-width: 460px; margin-top: 14px; color: #aaa; font-size: 14px; line-height: 1.5; } .empty-project { grid-column: 1/-1; border-top: 1px solid #383838; border-bottom: 1px solid #383838; padding: 70px 0; color: #aaa; font-size: 14px; letter-spacing: .03em; } .dark { background: var(--ink); color: #fff; } .dark .line { background: #fff; } .process-intro { display: flex; justify-content: space-between; align-items: end; gap: 30px; } .dark-title { font-size: clamp(70px,11vw,170px); max-width: 960px; margin: 35px 0 100px; } .process-intro p { max-width: 300px; color: #aaa; font-size: 14px; line-height: 1.5; } .process-list { border-top: 1px solid rgba(255,255,255,.35); } .process-row { display: grid; grid-template-columns: 130px 1fr 1fr; gap: 30px; border-bottom: 1px solid rgba(255,255,255,.35); padding: 34px 0; } .process-no { font: 500 52px 'Barlow Semi Condensed'; color: var(--accent); } .process-name { font: 600 clamp(27px,4vw,52px) 'Barlow Semi Condensed'; text-transform: uppercase; } .process-copy { max-width: 330px; color: #aaa; font-size: 14px; line-height: 1.55; } .principles { display: grid; grid-template-columns: repeat(2,1fr); gap: 0 9%; } .principle { border-top: 1px solid rgba(255,255,255,.3); padding: 28px 0 45px; } .principle h3 { font: 600 clamp(30px,4vw,56px) 'Barlow Semi Condensed'; text-transform: uppercase; margin: 0 0 16px; } .principle p { color: #aaa; max-width: 360px; line-height: 1.55; font-size: 14px; } .founder { background: #0b0b0b; color: #f3f1ec; } .founder-grid { display: grid; grid-template-columns: .7fr 1fr; gap: 10%; align-items: end; } .founder-image { height: 650px; } .founder-name { font-size: clamp(86px,13vw,190px); margin: 30px 0; } .founder-copy { font-size: 16px; line-height: 1.6; max-width: 400px; color: #d0d0d0; } .contact { background: #111; color: #f3f1ec; } .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12%; } .contact-title { font-size: clamp(68px,9vw,135px); margin: 30px 0 45px; } .contact-details { margin-top: 80px; border-top: 1px solid rgba(255,255,255,.28); } .detail { border-bottom: 1px solid rgba(255,255,255,.28); padding: 19px 0; display: flex; justify-content: space-between; font-size: 12px; } .detail span:first-child { color: #aaa; text-transform: uppercase; letter-spacing: .14em; } .contact-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; } .contact-actions .btn { font-size: 10px; padding: 13px 15px; } .form { border-top: 1px solid var(--line); margin-top: 15px; } .field { border-bottom: 1px solid rgba(255,255,255,.28); padding: 18px 0; } .field label { display: block; color: #aaa; font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; margin-bottom: 9px; } .field input, .field select, .field textarea { width: 100%; border: 0; outline: 0; background: transparent; color: #fff; font-size: 15px; } .field textarea { min-height: 100px; resize: vertical; } .field input:focus, .field select:focus, .field textarea:focus { box-shadow: 0 1px 0 #fff; } .submit { margin-top: 28px; background: #fff; color: #111; border-color: #fff; } .submit:hover { background: var(--accent); color: #111; border-color: var(--accent); } .form-status { font-size: 12px; margin-top: 16px; min-height: 18px; color: #aaa; } footer { background: var(--ink); color: #fff; padding: 90px 0 25px; } .footer-top { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 100px; } .footer-brand { font-size: clamp(45px,7vw,110px); max-width: 480px; } .footer-tag { color: #bdbdbd; font-size: 13px; margin-top: 25px; } .footer-col h4 { color: var(--accent); font-size: 10px; letter-spacing: .16em; margin: 8px 0 24px; } .footer-col a, .footer-col p { display: block; color: #f1f1f1; font-size: 13px; margin: 0 0 13px; } .footer-col a:hover { color: var(--accent); } .footer-bottom { border-top: 1px solid #444; padding-top: 18px; display: flex; justify-content: space-between; color: #999; font-size: 11px; } .modal { position: fixed; z-index: 50; inset: 0; background: rgba(17,17,17,.92); display: none; align-items: center; justify-content: center; padding: 30px; opacity: 0; transition: opacity .35s; } .modal.open { display: flex; opacity: 1; } .modal-panel { background: #151515; color: #f3f1ec; width: min(1100px,100%); max-height: 90vh; overflow: auto; position: relative; transform: translateY(25px) scale(.98); transition: transform .35s; } .modal.open .modal-panel { transform: none; } .modal-close { position: absolute; right: 18px; top: 17px; border: 0; background: none; font-size: 26px; z-index: 2; } .modal-image { height: 430px; } .modal-image img { width: 100%; height: 100%; object-fit: cover; display: block; } .modal-content { padding: 36px; } .modal-content h2 { font-size: clamp(50px,7vw,90px); margin: 0 0 18px; } .modal-data { display: flex; gap: 30px; flex-wrap: wrap; border-top: 1px solid #3a3a3a; border-bottom: 1px solid #3a3a3a; padding: 16px 0; margin: 20px 0; } .modal-data span { font-size: 10px; letter-spacing: .13em; text-transform: uppercase; color: #aaa; } .modal-description { max-width: 600px; line-height: 1.6; color: #c5c5c5; } .mobile-menu { display: none; } .approach-band { background: #141414; color: #f3f1ec; padding: 58px 0; border-top: 1px solid var(--line); border-bottom: 1px solid #383838; } .approach-grid { display: grid; grid-template-columns: 1.2fr repeat(3,1fr); gap: 35px; align-items: start; } .approach-lead { font: 600 clamp(28px,3.5vw,52px)/.92 'Barlow Semi Condensed'; text-transform: uppercase; letter-spacing: -.03em; } .approach-item { border-left: 1px solid rgba(255,255,255,.28); padding-left: 22px; } .approach-item strong { display: block; color: #fff; font: 600 22px 'Barlow Semi Condensed'; text-transform: uppercase; margin-bottom: 9px; } .approach-item span { display: block; color: #aaa; font-size: 13px; line-height: 1.45; max-width: 190px; } .editorial-break { background: #0b0b0b; color: #f3f1ec; padding: 0; overflow: hidden; border-top: 1px solid #222; } .editorial-break-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; } .editorial-break-image { min-height: 520px; position: relative; } .editorial-break-image:after { content: 'Dream Home Hub'; position: absolute; bottom: 24px; left: 24px; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; } .editorial-break-copy { display: flex; flex-direction: column; justify-content: center; background: #111; padding: 70px clamp(30px,7vw,120px); } .editorial-break-copy h2 { font-size: clamp(55px,7vw,110px); margin: 25px 0 30px; } .editorial-break-copy p { max-width: 360px; color: #aaa; line-height: 1.6; font-size: 15px; } .editorial-break-copy .btn { width: max-content; margin-top: 30px; } .studio-note { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); } @media (max-width:900px){ .container {  width: min(100% - 40px,700px); }  .nav-links, .nav-cta {  display: none; }  .menu-btn {  display: block;  font-size: 24px; }  .mobile-menu {  position: absolute;  top: 100%;  left: 0;  right: 0;  background: #111;  color: #fff;  padding: 20px;  display: none;  border-bottom: 1px solid #383838; }  .mobile-menu.open {  display: block; }  .mobile-menu a {  display: block;  padding: 14px 0;  border-bottom: 1px solid #383838;  font-size: 11px;  font-weight: 700;  letter-spacing: .12em;  text-transform: uppercase; }  .hero {  min-height: 92vh; }  .hero-title {  font-size: clamp(66px,15vw,120px); }  section {  padding: 100px 0; }  .about-grid, .contact-grid, .founder-grid {  grid-template-columns: 1fr;  gap: 60px; }  .about-image {  height: 500px;  margin-top: 30px; }  .about-statement {  margin-top: 80px; }  .section-head {  display: block;  margin-bottom: 50px; }  .service-row {  grid-template-columns: 48px 1fr 24px; }  .service-desc {  grid-column: 2;  max-width: none;  margin-top: -5px; }  .project-list {  display: block; }  .project, .project:nth-child(even) {  margin: 0 0 80px; }  .project-image, .project:nth-child(2) .project-image, .project:nth-child(3) .project-image {  height: 80vw;  max-height: 560px; }  .project-meta {  display: block; }  .project-info {  justify-content: flex-start;  margin-top: 12px; }  .process-intro {  display: block; }  .dark-title {  margin-bottom: 60px; }  .process-row {  grid-template-columns: 65px 1fr;  gap: 15px; }  .process-copy {  grid-column: 2; }  .principles {  grid-template-columns: 1fr; }  .founder-image {  height: 520px; }  .founder-name {  font-size: clamp(80px,22vw,150px); }  .contact-details {  margin-top: 30px; }  .footer-top {  grid-template-columns: 1fr 1fr;  gap: 55px;  padding-bottom: 65px; }  .footer-brand {  grid-column: 1/-1; }  .footer-bottom {  display: block; }  .footer-bottom span {  display: block;  margin-top: 10px; }  .hero-strip {  margin-top: 70px; } } @media (max-width:900px){ .approach-grid {  grid-template-columns: 1fr 1fr;  gap: 28px; }  .approach-lead {  grid-column: 1/-1; }  .editorial-break-grid {  grid-template-columns: 1fr; }  .editorial-break-image {  min-height: 58vw; }  .editorial-break-copy {  min-height: 470px;  padding: 70px 20px; } } @media (max-width:520px){ .section-title {  line-height: .9; }  .contact-title {  line-height: .9; }  .container {  width: calc(100% - 32px); }  .hero-actions {  display: block; }  .hero-actions .btn {  margin: 0 0 10px; }  .hero-strip {  gap: 14px;  flex-wrap: wrap; }  .hero-strip span {  width: calc(50% - 10px); }  .service-row {  padding: 22px 0; }  .service-name {  font-size: 28px; }  .modal {  padding: 12px; }  .modal-image {  height: 250px; }  .modal-content {  padding: 24px; }  .footer-top {  grid-template-columns: 1fr; }  .footer-brand {  grid-column: auto; } } @media (prefers-reduced-motion:reduce){ *, *:before, *:after {  scroll-behavior: auto!important;  animation-duration: .01ms!important;  transition-duration: .01ms!important; }  .reveal {  opacity: 1;  transform: none; }  .clip-reveal {  clip-path: none;  transform: none; }  .hero-bg {  transform: none; } } /* Content safety fallback: text must remain readable even if reveal JS fails. */.reveal { opacity: 1!important; transform: none!important; visibility: visible!important; } @media (prefers-reduced-motion: reduce) { .js .reveal {  opacity: 1 !important;  transform: none !important; }  .js .clip-reveal {  clip-path: inset(0) !important;  transform: none !important; } } .service-visual-grid { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 18px; margin: 0 0 70px; } .service-visual-card { height: 300px; overflow: hidden; background: #202020; border: 1px solid #303030; } .service-visual-card img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.82); transition: transform .8s ease,filter .5s ease; } .service-visual-card:hover img { transform: scale(1.035); filter: saturate(1); } @media (max-width:900px){ .service-visual-grid {  grid-template-columns: 1fr 1fr;  gap: 12px;  margin-bottom: 50px; }  .service-visual-card:first-child {  grid-column: 1/-1;  height: 330px; }  .service-visual-card {  height: 220px; } } @media (max-width:520px){ .service-visual-grid {  grid-template-columns: 1fr; }  .service-visual-card:first-child, .service-visual-card {  grid-column: auto;  height: 230px; } }</style>
+    </head>
+    <body>
+        <script>document.documentElement.classList.add('js');</script>
+        <header class="nav" id="siteNav">
+            <div class="container nav-inner">
+                <a class="brand" href="#home" aria-label="Dream Home Hub home">DREAM HOME HUB</a>
+                <nav class="nav-links" aria-label="Primary navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#process">Process</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <a class="nav-cta" href="#contact">Start your project <span class="arrow">→</span></a>
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-bg" role="img" aria-label="Contemporary home exterior"></div>
+                <div class="container hero-content">
+                    <div class="hero-kicker eyebrow">Architecture <span style="color:var(--accent)">•</span> Design <span style="color:var(--accent)">•</span> Construction
+                    </div>
+                    <h1 class="display hero-title">Building<br>Your Dream<br>Home.</h1>
+                    <p class="hero-copy">Thoughtful design, practical planning and complete execution — from the first idea to the final key.</p>
+                    <div class="hero-actions">
+                        <a class="btn light" href="#contact">Start your project <span class="arrow">→</span></a>
+                        <a class="btn light" href="#projects">Explore our work <span class="arrow">→</span></a>
+                    </div>
+                    <div class="hero-strip">
+                        <span>Design</span>
+                        <span>Planning</span>
+                        <span>Construction</span>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container about-grid">
+                    <div>
+                        <div class="eyebrow reveal">About Dream Home Hub</div>
+                        <h2 class="display about-title reveal">Designed around<br>the way you live.</h2>
+                        <p class="about-copy reveal">Dream Home Hub is an architecture and design studio focused on creating thoughtful, functional and timeless spaces. From planning and architectural design to construction and renovation, we bring the entire journey together under one roof.</p>
+                        <div class="about-statement display reveal">Design + Build<br>Under One Roof
+                        </div>
+                        <div class="founder-mini reveal">
+                            <span>Aniruthan KP</span>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                    <div class="media about-image clip-reveal">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85" alt="Warm, light-filled contemporary interior" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 1000%22%3E%3Crect width=%22800%22 height=%221000%22 fill=%22%23202020%22/%3E%3Cpath d=%22M0 700L350 420l450 300v280H0z%22 fill=%22%235b5145%22/%3E%3C/svg%3E';">
+                    </div>
+                </div>
+            </section>
+            <section class="approach-band" aria-label="Our approach">
+                <div class="container approach-grid">
+                    <div class="approach-lead reveal">A better home begins with a better process.</div>
+                    <div class="approach-item reveal">
+                        <strong>Listen</strong>
+                        <span>We start with your lifestyle, site and priorities.</span>
+                    </div>
+                    <div class="approach-item reveal">
+                        <strong>Shape</strong>
+                        <span>We turn the brief into clear, thoughtful design.</span>
+                    </div>
+                    <div class="approach-item reveal">
+                        <strong>Deliver</strong>
+                        <span>We carry the approved idea through to reality.</span>
+                    </div>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <div class="container">
+                    <div class="section-head">
+                        <div>
+                            <div class="eyebrow reveal">What we do</div>
+                            <h2 class="display section-title reveal">From idea<br>to reality.</h2>
+                        </div>
+                        <p class="reveal" style="max-width:270px;color:var(--muted);font-size:14px;line-height:1.5">A complete design and construction journey, shaped around your site, lifestyle and vision.</p>
+                    </div>
+                    <div class="service-visual-grid" aria-label="Architecture and construction services">
+                        <div class="service-visual-card">
+                            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85" alt="Contemporary residential interior">
+                        </div>
+                        <div class="service-visual-card">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Contemporary home exterior">
+                        </div>
+                        <div class="service-visual-card">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Interior architecture and materials">
+                        </div>
+                    </div>
+                    <div id="serviceList"></div>
+                </div>
+            </section>
+            <section class="editorial-break" aria-label="Design statement"></section>
+            <section class="dark" id="process">
+                <div class="container">
+                    <div class="process-intro">
+                        <div>
+                            <div class="eyebrow reveal" style="color:var(--accent)">The journey</div>
+                            <h2 class="display dark-title reveal">From first idea<br>to final key.</h2>
+                        </div>
+                        <p class="reveal">Good homes are not rushed. We make the process clear, considered and connected from beginning to end.</p>
+                    </div>
+                    <div class="process-visual media" style="height:420px;margin:0 0 75px;border:1px solid #2d2d2d">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85" alt="Architectural planning workspace" style="width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.8)">
+                    </div>
+                    <div class="process-list" id="processList"></div>
+                </div>
+            </section>
+            <section class="dark" style="padding-top:0">
+                <div class="container">
+                    <div class="eyebrow reveal" style="color:var(--accent)">Why Dream Home Hub?</div>
+                    <h2 class="display" style="font-size:clamp(56px,8vw,120px);margin:28px 0 85px">Built for<br>real life.</h2>
+                    <div class="principles" id="principles"></div>
+                </div>
+            </section>
+            <section class="founder" id="founder">
+                <div class="container founder-grid">
+                    <div class="media founder-image clip-reveal">
+                        <img loading="lazy" src="anu.jpg" alt="Professional portrait placeholder for founder Aniruthan KP" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 900%22%3E%3Crect width=%22700%22 height=%22900%22 fill=%22%235b5145%22/%3E%3Ccircle cx=%22350%22 cy=%22290%22 r=%22135%22 fill=%22%23202020%22/%3E%3Cpath d=%22M130 820c30-220 100-320 220-320s190 100 220 320%22 fill=%22%23111111%22/%3E%3C/svg%3E';" data-pg-alt-review="image" class="order-10 place-self-center">
+                    </div>
+                    <div>
+                        <div class="eyebrow reveal">Meet the founder</div>
+                        <h2 class="display founder-name reveal">Aniruthan<br>KP</h2>
+                        <div class="eyebrow reveal" style="color:var(--muted)">Founder</div>
+                        <p class="founder-copy reveal" style="margin-top:35px">Aniruthan KP leads Dream Home Hub with a focus on thoughtful design, practical planning and bringing the complete home journey together under one roof.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="container contact-grid">
+                    <div>
+                        <div class="eyebrow reveal">Project enquiry</div>
+                        <h2 class="display contact-title reveal">Let's build<br>your dream home.</h2>
+                        <p class="reveal" style="max-width:390px;color:#d0d0d0;line-height:1.55">Have a plot, a concept or simply an idea? Tell us about your project and our team will get in touch.</p>
+                        <div class="contact-details reveal">
+                            <div class="detail">
+                                <span>Studio</span>
+                                <span>Tholayavattam, Tamil Nadu</span>
+                            </div>
+                            <div class="detail">
+                                <span>Phone</span>
+                                <span>+91 8300166808</span>
+                            </div>
+                            <div class="detail">
+                                <span>Email</span>
+                                <span>aniruthananu00@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-actions reveal">
+                            <a class="btn" href="#enquiryForm">Send an enquiry <span class="arrow">→</span></a>
+                            <button class="btn" type="button" id="whatsappBtn">WhatsApp <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                    <form class="form reveal" id="enquiryForm">
+                        <div class="field">
+                            <label for="name">Full name *</label>
+                            <input id="name" name="name" required autocomplete="name"/>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone number *</label>
+                            <input id="phone" name="phone" required type="tel" autocomplete="tel"/>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email"/>
+                        </div>
+                        <div class="field">
+                            <label for="type">Project type *</label>
+                            <select id="type" name="type" required="">
+                                <option value="">Select a project type</option>
+                                <option>New Home</option>
+                                <option>Residential Design</option>
+                                <option>Commercial</option>
+                                <option>Interior</option>
+                                <option>Renovation</option>
+                                <option>Full Construction</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="location">Location *</label>
+                            <input id="location" name="location" required/>
+                        </div>
+                        <div class="field">
+                            <label for="area">Plot / built-up area</label>
+                            <input id="area" name="area"/>
+                        </div>
+                        <div class="field">
+                            <label for="services">Services required</label>
+                            <input id="services" name="services" placeholder="Architectural Design, Construction…"/>
+                        </div>
+                        <div class="field">
+                            <label for="message">Project message</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <button class="btn submit" type="submit">Send enquiry <span class="arrow">→</span>
+                        </button>
+                        <div class="form-status" id="formStatus" role="status"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand display">Dream<br>Home Hub
+                        <div class="footer-tag">Architecture • Design • Construction</div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#process">Process</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#services">Architectural Design</a>
+                        <a href="#services">2D Floor Planning</a>
+                        <a href="#services">3D Elevation</a>
+                        <a href="#services">Interior Design</a>
+                        <a href="#services">Construction</a>
+                        <a href="#services">Renovation</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <p>Tholayavattam,<br>Tamil Nadu</p>
+                        <p style="color:#999;margin-top:28px"><a href="#" aria-label="Instagram — add verified profile link">Instagram</a></p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© 2026 Dream Home Hub. All rights reserved.</span>
+                    <span>Design + Build Under One Roof</span>
+                </div>
+            </div>
+        </footer>
+        <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-panel">
+                <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+                <div class="media modal-image">
+                    <img id="modalImage" alt=""/>
+                </div>
+                <div class="modal-content">
+                    <div class="eyebrow" id="modalCategory">Project information</div>
+                    <h2 class="display" id="modalTitle">[ADD VERIFIED PROJECT]</h2>
+                    <div class="modal-data">
+                        <span id="modalLocation">Location</span>
+                        <span id="modalArea">Area</span>
+                        <span id="modalStage">Stage</span>
+                    </div>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <p class="eyebrow" style="color:var(--muted);margin-top:28px" id="modalServices"></p>
+                </div>
+            </div>
+        </div>
+        <script>
+    const PLACEHOLDER='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 800%22%3E%3Crect width=%221200%22 height=%22800%22 fill=%22%23202020%22/%3E%3Cpath d=%22M0 560L430 230l770 360v210H0z%22 fill=%22%235b5145%22/%3E%3Cpath d=%22M700 0h500v590L700 420z%22 fill=%22%23171717%22 opacity=%22.15%22/%3E%3C/svg%3E';
+    const WHATSAPP_NUMBER='ADD_VERIFIED_NUMBER';
+    const services=[['01','Architectural Design','Thoughtful spaces shaped around the way you live.'],['02','2D Floor Planning','Clear, practical planning that makes every square metre work.'],['03','3D Elevation','A considered visual direction for the home you imagine.'],['04','Interior Design','Material, light and detail brought together with purpose.'],['05','Construction','Careful execution that carries the design through to reality.'],['06','Renovation','New life for existing spaces, with clarity from start to finish.']];
+    const projects=[
+      {id:1,name:'[ADD VERIFIED PROJECT]',location:'[ADD VERIFIED LOCATION]',category:'Residential',area:'[ADD VERIFIED AREA]',stage:'[ADD PROJECT STAGE]',image:'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1500&q=85',description:'Project details will be added once verified information is supplied.',services:'Architectural Design · 2D Floor Planning'},
+      {id:2,name:'[ADD VERIFIED PROJECT]',location:'[ADD VERIFIED LOCATION]',category:'Interior',area:'[ADD VERIFIED AREA]',stage:'[ADD PROJECT STAGE]',image:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1500&q=85',description:'Project details will be added once verified information is supplied.',services:'Interior Design · 3D Elevation'},
+      {id:3,name:'[ADD VERIFIED PROJECT]',location:'[ADD VERIFIED LOCATION]',category:'Construction',area:'[ADD VERIFIED AREA]',stage:'[ADD PROJECT STAGE]',image:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1500&q=85',description:'Project details will be added once verified information is supplied.',services:'Construction · Complete Design + Build'}
+    ];
+    const processes=[['01','Consultation','Understand your requirements, lifestyle, budget and vision.'],['02','Site & Planning','Study the site and develop the most suitable planning approach.'],['03','Design','Develop floor plans, elevations, 3D concepts and design details.'],['04','Execution','Coordinate construction and bring the approved design to life.'],['05','Handover','Complete the final stages and deliver the finished space.']];
+    const principles=[['Design with purpose','Every design begins with understanding how the space will actually be used.'],['One team','Design and construction are coordinated under one roof.'],['Transparent process','Clear communication throughout the project journey.'],['Built for real life','Beautiful spaces should also be practical, comfortable and lasting.']];
+    const serviceList=document.querySelector('#serviceList'); serviceList.innerHTML=services.map(s=>`<div class="service-row reveal" tabindex="0" data-service="${s[1]}"><span class="service-number">${s[0]}</span><span class="service-name">${s[1]}</span><span class="service-desc">${s[2]}</span><span class="service-arrow">→</span></div>`).join('');
+    document.querySelector('#processList').innerHTML=processes.map(p=>`<div class="process-row reveal"><span class="process-no">${p[0]}</span><span class="process-name">${p[1]}</span><span class="process-copy">${p[2]}</span></div>`).join('');
+    document.querySelector('#principles').innerHTML=principles.map(p=>`<div class="principle reveal"><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join('');
+    const list=document.querySelector('#projectList');
+    function renderProjects(filter='all'){const visible=projects.filter(p=>filter==='all'||p.category.toLowerCase()===filter||p.services.toLowerCase().includes(filter));list.innerHTML=visible.length?visible.map((p,i)=>`<article class="project reveal" data-id="${p.id}" tabindex="0" role="button" aria-label="View project details for ${p.name}"><div class="media project-image"><img loading="lazy" src="${p.image}" alt="${p.name}" onerror="this.onerror=null;this.src='${PLACEHOLDER}'"><div class="project-overlay"></div></div><div class="project-meta"><div><h3 class="display project-title">${p.name}</h3><div class="project-info"><span>${p.category}</span><span>${p.location}</span><span>${p.area}</span><span>${p.stage}</span></div></div><span class="project-arrow">→</span></div><p class="project-desc">${p.description}</p><div class="eyebrow" style="margin-top:18px;color:var(--muted)">View project <span class="arrow">→</span></div></article>`).join(''):'<div class="empty-project">No verified projects have been added to this category yet.</div>'; list.querySelectorAll('.project').forEach(el=>el.classList.add('is-visible')); list.querySelectorAll('.project').forEach(el=>{
+      const open=()=>openModal(projects.find(p=>p.id==el.dataset.id));
+      el.addEventListener('click',open);
+      el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+    });}
+    // Safety fallback: dynamically generated content is always rendered.
+    requestAnimationFrame(()=>document.querySelectorAll('#serviceList .reveal,#processList .reveal,#principles .reveal').forEach(el=>el.classList.add('is-visible')));
+    renderProjects();
+    document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderProjects(btn.dataset.filter)}));
+    const modal=document.querySelector('#projectModal');
+    function openModal(p){if(!p)return;document.querySelector('#modalImage').src=p.image;document.querySelector('#modalImage').onerror=()=>document.querySelector('#modalImage').src=PLACEHOLDER;document.querySelector('#modalImage').alt=p.name;document.querySelector('#modalTitle').textContent=p.name;document.querySelector('#modalCategory').textContent=p.category;document.querySelector('#modalLocation').textContent=p.location;document.querySelector('#modalArea').textContent=p.area;document.querySelector('#modalStage').textContent=p.stage;document.querySelector('#modalDescription').textContent=p.description;document.querySelector('#modalServices').textContent='Services · '+p.services;modal.classList.add('open');document.body.style.overflow='hidden';document.querySelector('#modalClose').focus()}
+    function closeModal(){modal.classList.remove('open');document.body.style.overflow='';} document.querySelector('#modalClose').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+    const nav=document.querySelector('#siteNav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>70),{passive:true});
+    const sectionLinks=[...document.querySelectorAll('.nav-links a')];
+const trackedSections=sectionLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const sectionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(entry.isIntersecting){
+    sectionLinks.forEach(a=>{
+      const active=a.getAttribute('href')==='#'+entry.target.id;
+      a.classList.toggle('active',active);
+      if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
+    });
+  }
+}),{rootMargin:'-35% 0px -55%'});
+trackedSections.forEach(section=>sectionObserver.observe(section));
+    const menuBtn=document.querySelector('#menuBtn'),mobile=document.querySelector('#mobileMenu');menuBtn.addEventListener('click',()=>{const open=mobile.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open);menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu');menuBtn.textContent=open?'×':'☰'});mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobile.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Open menu');menuBtn.textContent='☰'}));
+    const serviceField=document.querySelector('#services');document.querySelectorAll('.service-row').forEach(row=>{const choose=()=>{if(serviceField)serviceField.value=row.dataset.service;document.querySelector('#contact').scrollIntoView({behavior:'smooth'});setTimeout(()=>{if(serviceField)serviceField.focus()},650)};row.addEventListener('click',choose);row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose()}})});
+    let observer;function observeReveals(){if(observer)document.querySelectorAll('.reveal:not(.is-visible)').forEach(el=>observer.observe(el))}observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal,.clip-reveal').forEach(el=>observer.observe(el));
+    const form=document.querySelector('#enquiryForm');document.querySelector('#whatsappBtn')?.addEventListener('click',()=>{document.querySelector('#contact').scrollIntoView({behavior:'smooth'});setTimeout(()=>document.querySelector('#enquiryForm input').focus(),650)});form.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form);const status=document.querySelector('#formStatus');if(!form.checkValidity()){status.textContent='Please complete the required fields.';form.reportValidity();return}if(WHATSAPP_NUMBER==='ADD_VERIFIED_NUMBER'){status.textContent='The enquiry is ready, but WhatsApp cannot open until a verified number is configured.';return}const msg=`Hello Dream Home Hub,\n\nI would like to discuss a project.\n\nName: ${data.get('name')}\nPhone: ${data.get('phone')}\nEmail: ${data.get('email')||'[Not provided]'}\nProject Type: ${data.get('type')}\nLocation: ${data.get('location')}\nArea: ${data.get('area')||'[Not provided]'}\nServices Required: ${data.get('services')||'[Not provided]'}\nMessage: ${data.get('message')||'[Not provided]'}\n\nPlease get in touch with me.`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank','noopener');status.textContent='Opening WhatsApp…'});
+    if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){const parallax=document.querySelector('.hero-bg');window.addEventListener('scroll',()=>{if(scrollY<innerHeight)parallax.style.transform=`scale(1.08) translateY(${scrollY*.025}px)`},{passive:true})}
+  </script>
+        <noscript>
+            <div style="position:fixed;z-index:100;left:0;right:0;bottom:0;background:#111;color:#fff;padding:12px 18px;font:12px/1.5 Figtree,Arial,sans-serif;text-align:center;">
+                JavaScript is disabled. The main studio information remains available, but project filters, project details and the enquiry WhatsApp action require JavaScript.
+</div>
+        </noscript>
+    </body>
+</html>
